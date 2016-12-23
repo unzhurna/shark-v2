@@ -1,0 +1,17 @@
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "_custom-variables";
+
+// Import Bootstrap for Sass
+@import "bootstrap";
+
+//Color
+$blue : #009fcd;
+
+
+
+//Mediaquery Import
+
+@import "_mediaQuery";

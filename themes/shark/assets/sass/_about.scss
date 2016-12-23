@@ -1,0 +1,301 @@
+//Page With Sidebar
+
+.tab-side-button {
+		ul {
+			li {
+				padding: 10px;
+				border-bottom: $border-gray solid 1px;
+				a.side-button {
+					color: $content-text;
+					font-weight: 400;
+					text-decoration: none;
+				}
+
+				&.active {
+					border-left: solid $orange 5px;
+					background: $gray-bg;
+
+					a {
+						font-weight: bold;
+					}
+				}
+
+				&:hover {
+					background: $gray-bg;
+				}
+			}
+		}
+		
+	}
+#tab-side-content-wrapper {
+	.tab-side-content {
+		display: none;
+
+	}
+}
+
+
+.page-with-sidebar {
+	#tab-side-content-wrapper {
+
+		.tab-side-content {
+			h3 {
+				font-size: 18px;
+				color: $content-text;
+				margin-top: 0;
+			}
+
+			.content-image {
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.download-banner-wrapper {
+		img {
+			width: 100%;
+		}
+	}
+
+	.select-wrapper {
+		select {
+			background-color: $gray-bg;
+		}
+	}
+
+	.subscribe-content {
+		background: $gray-bg-dark;
+		color: #fff;
+		padding: 15px;
+
+		form {
+			input[type="text"], input[type="submit"] {
+				width:100%;
+				padding: 10px;
+				margin: 5px 0;
+				border: 0px;
+			}
+			input[type="text"] {
+				color: $gray-bg;
+				background: #fff;
+			}
+
+			input[type="submit"] {
+				background: $orange;
+				text-transform: uppercase;
+				color: #fff;
+				letter-spacing: 0.1em;
+
+				&:hover {
+					background: $orange-hover;
+				}
+			}
+		}
+	}
+
+	//Page Sidebar
+
+	.page-sidebar-content {
+		h3 {
+			font-size: 18px;
+			color: $content-text;
+			margin-top: 0;
+		}
+
+		.content-image {
+			img {
+				width: 100%;
+			}
+
+		}
+
+		.jumbotron-container {
+			overflow:hidden;
+			img {
+				width: 100%;
+			}
+
+			.jumbotron-content {
+				border-left: solid 4px $gray-bg-dark;
+				background-color: $gray-bg;
+				padding: 20px;
+				margin: 35px 0;
+				p {
+					letter-spacing: 0.1em;
+					line-height: 1.8em;
+				}
+			}
+		}
+
+		.career-container {
+			padding: 35px 0;
+
+		}
+
+		//Panel
+		.panel-heading {
+			background: $gray-bg url(images/drop-down.png) 97% center no-repeat;
+
+			&.active {
+				background: $gray-bg url(images/drop-up.png) 97% center no-repeat;
+			}
+
+			.panel-title {
+				font-family: $title-font;
+
+				&:hover {
+					color: $gray-bg-dark;
+					text-decoration: none;
+				}
+			}
+		}
+
+		.panel-body {
+			ul {
+				li {
+					background: url(images/icon-gear.png) left center no-repeat;
+					padding-left: 25px;
+				}
+			}
+
+			table{
+				width:100%;
+				td {
+					padding: 10px;
+					background: $gray-bg;
+					img {
+						width:20%;
+					}
+
+					&.first-column {
+						width: 50%;
+					}
+
+					&.second-column {
+						width:50%;
+					}
+
+					&.heading {
+						background-color: $gray-bg-dark;
+						color: #fff;
+						text-align: center;
+					}
+				}
+			}
+		}
+
+		//Sales
+
+		#sales-info-wrapper {
+			padding: 30px 0;
+
+			.sales-container {
+				margin: 85px 0 0;
+				border: solid 3px $gray-bg-dark;
+
+				&:hover {
+			    	background: $gray-bg-dark; 	
+
+			    	.sales-info {
+
+			    		p{
+			    			color: #fff;
+			    		}
+			    		ul{
+			    			li{
+			    				a{
+			    					color: #fff;
+			    				}
+			    			}
+			    		}
+			    	}
+			    }
+
+			}
+
+			 
+	    	.sales-info {
+	    		p {
+	    			color:$content-text;
+	    		}
+
+	    		ul {
+	    			li {
+	    				a {
+	    					color:$content-text;
+	    				}
+	    			}
+	    		}
+		    }
+		}
+	}
+}
+
+.related-wrapper {
+	border: solid 3px $gray-bg;
+
+	&:hover {
+		border: solid 3px #ccc;
+
+		.related-info {
+			background: #ccc;
+		}
+	}
+
+	.related-image {
+		img{
+			width: 100%;
+		}
+	}
+
+	.related-info {
+		background: $gray-bg;
+		padding:7px;
+
+		a {
+			h3 {
+				font-size: 16px;
+			}
+		}
+
+		.viewdetail-btn {
+			padding: 10px 0 0;
+		}
+	}
+}
+
+
+//Blog Index
+
+.search-form {
+	form{
+		input[type="text"] {
+			width: 100%;
+			background: $gray-bg-dark url(images/icon-search-white.png) 97% center no-repeat;
+			color: $content-text;
+			padding: 5px;
+			border: 0px;
+		}
+	}
+}
+.categories-sidebar {
+	ul {
+		li {
+			background: url(images/icon-gear.png) left center no-repeat;
+			padding-left: 25px;
+
+			a {
+				&:hover {	
+					color: $orange;
+				}
+			}
+		}
+	}
+}
+
+.post-date, .post-category {
+	font-weight: bold;
+	font-family: $menu-font;
+}
