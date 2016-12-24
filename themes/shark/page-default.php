@@ -1,7 +1,7 @@
 <?php include "header.php"; ?>
 <section id="page-banner">
 	<div id="banner-image">
-		<img style="width:100%;" src="<?php echo base_url('uploads/banner/'.$page_image); ?>" alt="" />
+		<img style="width:100%;" src="<?php echo $page_image; ?>" alt="" />
 	</div>
 	<div id="banner-caption">
 		<h1><?php echo $page_title; ?></h1>

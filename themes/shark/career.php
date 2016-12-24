@@ -2,10 +2,10 @@
 
 <section id="page-banner">
 	<div id="banner-image">
-		<img src="<?php asset_url('shark'); ?>images/banner-career.jpg" alt="" />
+		<img style="width:100%;" src="<?php echo get_static_content('about-page', 'page_image'); ?>" alt="" />
 	</div>
 	<div id="banner-caption">
-		<h1>Career</h1>
+		<h1><?php echo get_static_content('about-page', 'page_title'); ?></h1>
 	</div>
 </section>
 <section class="page-with-sidebar content-padding">

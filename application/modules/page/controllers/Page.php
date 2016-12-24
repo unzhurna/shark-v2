@@ -74,7 +74,7 @@ class Page extends MX_Controller{
                 'page_content' => '',
                 'page_status' => '1',
                 'page_image' => '',
-                
+
             );
         }
         else
@@ -92,7 +92,7 @@ class Page extends MX_Controller{
                 'page_id' => $id,
                 'page_author' => login_data('id'),
                 'page_title' => $this->input->post('page_title'),
-                'page_image' => basename($this->input->post('page_image')),
+                'page_image' => $this->input->post('page_image'),
                 'page_slug' => $this->input->post('page_slug'),
                 'page_content' => $this->input->post('page_content'),
                 'page_status' => (bool) $this->input->post('page_status')
@@ -106,7 +106,7 @@ class Page extends MX_Controller{
             $this->load->view_admin('template', $data);
         }
     }
-    
+
     public function delete($id)
     {
         $this->page->delete_page($id);

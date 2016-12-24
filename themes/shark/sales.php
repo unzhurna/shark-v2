@@ -1,10 +1,10 @@
 <?php include "header.php"; ?>
 <section id="page-banner">
 	<div id="banner-image">
-		<img src="<?php echo asset_url('shark'); ?>images/banner-about.jpg" alt="" />
+		<img style="width:100%;" src="<?php echo get_static_content('about-page', 'page_image'); ?>" alt="" />
 	</div>
 	<div id="banner-caption">
-		<h1>Sales Tim</h1>
+		<h1><?php echo get_static_content('about-page', 'page_title'); ?></h1>
 	</div>
 </section>
 <section class="page-with-sidebar content-padding">
